@@ -80,7 +80,7 @@ export default function App() {
         onClick={(e) => op.current?.toggle(e)}
       />
       <OverlayPanel ref={op}>
-        <div className="flex flex-column gap-3 w-[200px] p-3">
+        <div className="flex flex-column gap-3 w-[20px] p-3">
           <span>Enter number of rows:</span>
           <InputNumber
             value={rowCount ?? undefined}
@@ -117,17 +117,19 @@ export default function App() {
         totalRecords={totalRecords}
         rows={12}
         onPage={onPageChange}
-        tableStyle={{ maxWidth: '60rem' }}
+        tableStyle={{ maxWidth: '100%' }}
         className="custom-table"
         loading={loading}
         loadingIcon="pi pi-spinner pi-spin"
       >
-        <Column selectionMode="multiple" className="row-color" headerStyle={{ width: '3rem' }} />
-        <Column header={selectHeader} className="row-color" style={{ width: '10%' }} />
-        <Column field="title" header="Title" className="row-color" style={{ width: '20%' }} />
-        <Column field="place_of_origin" header="Place" className="row-color" style={{ width: '20%' }} />
-        <Column field="artist_display" header="Artist" className="row-color" style={{ width: '20%' }} />
-        <Column field="inscriptions" header="Inscriptions" className="row-color" style={{ width: '20%' }} />
+        <Column selectionMode="multiple" className='max-w-[10px] checkbox'  headerStyle={{ width: '3rem' }} />
+        <Column header={selectHeader} style={{ width: '3%' }} />
+        <Column field="title" header="Title"  style={{ width: '20%' }} />
+        <Column field="place_of_origin" header="Place"  style={{ width: '20%' }} />
+        <Column field="artist_display" header="Artist"  style={{ width: '10%', maxWidth: '50%' }} />
+        <Column field="date_start" header="Date Start"  style={{ width: '20%' }} />
+        <Column field="date_end" header="Date End" style={{ width: '20%' }} />
+        <Column field="inscriptions" header="Inscriptions"  style={{ width: '40%' }} />
       </DataTable>
     </div>
   );

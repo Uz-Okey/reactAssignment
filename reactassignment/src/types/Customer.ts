@@ -5,12 +5,9 @@ export interface Customer {
   title: string;
   place_of_origin: string;
   artist_display: string;
-  inscriptions: string;
+inscriptions: string;
   date_start: number;
   date_end: number;
-  inventoryStatus?: string;
-  rating?: number;
-  select?: string 
 }
 
  export interface ArticAPIResponse {
@@ -19,7 +16,7 @@ export interface Customer {
     title: string;
     place_of_origin?: string;
     artist_display?: string;
-    inscriptions?: string;
+    inscriptions: string;
     date_start?: number;
     date_end?: number;
   }[];

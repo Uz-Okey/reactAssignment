@@ -3,8 +3,8 @@
   background-color: black !important;
   color: rgb(198, 196, 196);
   font-weight: bold;
-  
-  text-align: center;
+  width: 900px !important;
+  max-width: 600px;
 }
 
 .showbutton .p-inputnumber-button {
@@ -60,7 +60,7 @@
 .custom-table .p-checkbox.p-highlight .p-checkbox-box {
   background-color: #0D406E !important;
   border-color: #0D406E !important;
-  color: white !important;
+  color: rgb(191, 26, 26) !important;
     transition: background-color 0.5s ease-in-out;
 }
 
