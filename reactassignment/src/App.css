@@ -1,0 +1,65 @@
+
+.custom-table .p-datatable-thead > tr > th {
+  background-color: black !important;
+  color: rgb(198, 196, 196);
+  font-weight: bold;
+  text-align: center;
+}
+
+.showbutton .p-inputnumber-button {
+  background-color: black !important;
+  color: white !important;
+  border: none;
+  display: flex;
+  margin: 2px;
+  height: 25px;
+}
+
+.showbutton input {
+  background-color: white;
+  color: black;
+  display: flex;
+}
+
+.icon{
+ background-color: white !important;
+ color: black !important;
+}
+
+.submitButton{
+   background-color: white !important;
+ color: black !important;
+ border: 2px solid black;
+ cursor: pointer;
+}
+
+.submitButton:hover{
+  border:2px solid black !important;
+  background-color: rgb(233, 231, 231) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr{
+  background-color: #c0daf3 !important;
+  color: black;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background-color: #c8ddf1 !important;
+  cursor: pointer;
+  color: black !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+  background-color: #0D406E !important;
+  color: white !important;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.custom-table .p-checkbox.p-highlight .p-checkbox-box {
+  background-color: #0D406E !important;
+  border-color: #0D406E !important;
+  color: white !important;
+    transition: background-color 0.5s ease-in-out;
+}
+
