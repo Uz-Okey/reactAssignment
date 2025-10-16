@@ -117,8 +117,8 @@ export default function App() {
         totalRecords={totalRecords}
         rows={12}
         onPage={onPageChange}
-      tableStyle={{ width: '100%' }}
-        className="custom-table w-100"
+        tableStyle={{ maxWidth: '60rem' }}
+        className="custom-table"
         loading={loading}
         loadingIcon="pi pi-spinner pi-spin"
       >
